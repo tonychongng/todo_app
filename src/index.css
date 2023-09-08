@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(107, 0, 207);
+  font-family: sans-serif, Arial, Helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This ensures the whole viewport height is used for centering. */
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 40px 30px;
+  background-color: #454545;
+}
+
+.input input[type="text"]{
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #454545;
+  color: antiquewhite;
+  border: 1px solid rgb(149, 55, 238);
+}
+
+.input input[type="text"]::placeholder {
+  color: antiquewhite;
+}
+
+.input input[type="submit"] {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 15px;
+  border: 1px transparent;
+  background-color: rgb(149, 55, 238);
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  background-color: rgb(149, 55, 238);
+  color: ;
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin: 20px 0;
+
+}
+
+.todo p {
+  align-items: center;
+  flex-grow: 1;
+  text-align: center; /* Alinea el texto horizontalmente en el párrafo */
+  display: flex; /* Convierte el párrafo en un contenedor flex */
+  align-items: center; /* Centra verticalmente el contenido del párrafo */
+  justify-content: center; /* Centra horizontalmente el contenido del párrafo */
+  font-size: large;
+  color: white;
+
+}
+
+.todo .delete{
+  display: inline;
+  margin-left: 40px;
+}
