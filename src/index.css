@@ -11,13 +11,12 @@ body {
 
 .content {
   border: 2px solid black;
-  border-radius: 30px;
   padding: 40px 30px;
   background-color: #454545;
 }
 
 .input input[type="text"]{
-  padding: 10px 15px;
+  padding: 15px 40px;
   border-radius: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -38,30 +37,62 @@ body {
   background-color: rgb(149, 55, 238);
 }
 
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .todo {
   display: flex;
   align-items: center;
   background-color: rgb(149, 55, 238);
-  color: ;
   border-radius: 20px;
-  padding: 20px 30px;
+  padding: 10px 30px;
   margin: 20px 0;
 
 }
 
 .todo p {
-  align-items: center;
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
   flex-grow: 1;
-  text-align: center; /* Alinea el texto horizontalmente en el párrafo */
-  display: flex; /* Convierte el párrafo en un contenedor flex */
-  align-items: center; /* Centra verticalmente el contenido del párrafo */
-  justify-content: center; /* Centra horizontalmente el contenido del párrafo */
+  text-align: left; /* Alinea el texto horizontalmente en el párrafo */
   font-size: large;
   color: white;
 
 }
 
 .todo .delete{
+  border: none; /* Elimina el borde predeterminado */
+  background: none; /* Elimina el fondo predeterminado */
+  padding: 2px 6px; /* Elimina el espacio de relleno predeterminado */
+  font: inherit; /* Utiliza la fuente predeterminada del navegador */
+  color: inherit; /* Utiliza el color predeterminado del texto del navegador */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+  outline: none; /* Elimina el contorno de enfoque predeterminado */
+  /* Agrega otros estilos personalizados si es necesario */
   display: inline;
   margin-left: 40px;
+  background-color: none;
+  color: white;
+}
+
+.todo .edit {
+  border: none; /* Elimina el borde predeterminado */
+  background: none; /* Elimina el fondo predeterminado */
+  padding: 2px 6px; /* Elimina el espacio de relleno predeterminado */
+  font: inherit; /* Utiliza la fuente predeterminada del navegador */
+  color: inherit; /* Utiliza el color predeterminado del texto del navegador */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+  outline: none; /* Elimina el contorno de enfoque predeterminado */
+  /* Agrega otros estilos personalizados si es necesario */
+  display: inline;
+  margin-left: 10px;
+  background-color: none;
+  color: white;
+}
+
+.error {
+  text-align: center;
+  color: rgb(197, 7, 7);
 }
