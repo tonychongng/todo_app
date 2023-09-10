@@ -16,6 +16,7 @@ body {
 }
 
 .input input[type="text"]{
+  display: inline-block;
   padding: 15px 40px;
   border-radius: 20px;
   margin-right: 20px;
@@ -30,6 +31,7 @@ body {
 }
 
 .input input[type="submit"] {
+  display: inline-block;
   padding: 10px 15px;
   color: white;
   border-radius: 15px;
@@ -96,3 +98,13 @@ body {
   text-align: center;
   color: rgb(197, 7, 7);
 }
+
+.on-editing {
+  border-radius: 20px;
+  background-color: #454545;
+  color: antiquewhite;
+  border: 1px solid rgb(149, 55, 238);
+  width: 100%; /* Haz que el input ocupe todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
